@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+
+.celebration{
+    background: url('../images/celebrate-for-twt.png') no-repeat;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background: #1B4D3E;
+}
+
+section{
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    height: 250px;
+}
+
+.Head_Container{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100%;
+    transform: translateX(-50%);
+}
+.Head_Container h1{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    color: #F2F3F4;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    padding: 0 0 30px 0;
+
+}
+.Head_Container label{
+    width: 100px;
+    height: 30px;
+    font-size: 1.4rem;
+    margin: 20px;
+}
+.Head_Container input{
+    width: 200px;
+    height: 30px;
+    color: rgb(11, 117, 112);
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    background: rgba(0,0,0,0.2);
+}
+.mainContainer{
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.mainContainer .days,.mainContainer .hour,.mainContainer .min,.mainContainer .sec{
+    flex-basis: 150px;
+    border: 1px solid;
+    text-align: center;
+    height: 150px;
+    border-radius: 13px;
+    position: relative;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.days>p,.hour>p,.min>p,.sec>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 60%;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    border-radius: inherit;
+    background: rgba(0,0,0,0.2);
+    color: ivory;
+    text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.show{
+    position: absolute;
+    top: 110%;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(245, 245, 240,0.7);
+    background: rgba(5, 163, 116, 0.65);
+    transition: 0.6s ease-in-out;
+}
+.show:hover{
+    background: rgba(5, 247, 174, 0.9);
+    color: rgb(15, 6, 0);
+}
+.start{
+    margin: 60px auto;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+.start button{
+    width: 10%;
+    height: 100%;
+    border-radius: 11px;
+    outline: none;
+    border: none;
+    background: rgba(8, 233, 139, 0.65);
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+.start button:hover{
+    background: rgba(5, 163, 116, 0.65);
+    color: black;
+}
+
+@media (max-width:450px){
+    .mainContainer{
+        height: 200px;
+    }
+    .mainContainer .days,.mainContainer .hour,.mainContainer .min,.mainContainer .sec{
+        flex-basis: 60px;
+        /* border: 1px solid; */
+        text-align: center;
+        height: 60px;
+        border-radius: 5px;
+        position: relative;
+        margin: 50px 3px;
+    }
+    .days input,.hour input,.min input,.sec input{
+        font-size: 1.3em;
+        font-weight: 100;
+        text-align: center;
+    }
+    .days>p,.hour>p,.min>p,.sec>p{
+        font-size: 1.3em;
+    }
+    .show{
+        top: 120%;
+        text-align: center;
+        width: 100%;
+        height: 35%;
+        border: none;
+        border-radius: 3px;
+        font-weight: 200;
+        font-size: 0.8rem;
+    }
+    .start button{
+        width: 45%;
+        height: 80%;
+        border-radius: 11px;
+    }
+
+
+    section{
+        position: relative;
+        width: 80%;
+        text-align: center;
+        margin: 30px auto;
+        height: 250px;
+    }
+    
+    .Head_Container h1{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    .Head_Container label{
+        width: 200px;
+        display: block;
+        color: #F2F3F4;
+        font-family: 'Merriweather', serif;
+        margin: 10px auto;
+    }
+    .Head_Container input{
+        width: 200px;
+        height: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
